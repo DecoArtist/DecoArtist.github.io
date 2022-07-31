@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* WEB SHOULD WORK MAX IN 4814x2466 */
+
+@font-face {
+	font-family: "brawl";
+	src: url("fonts/LilitaOne-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "log";
+	src: url("fonts/Nougat-ExtraBlack.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SP";
+	src: url("fonts/supercell-magic.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "TG";
+	src: url("fonts/Trumpgothicpro.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "nunito";
+	src: url("fonts/Nunito-SemiBold.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+spacetext::before
+{
+    content: "|";
+    font-weight: bolder;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+body
+{
+	padding: 0px;
+    margin: 0px;
+    display: initial;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: radial-gradient(rgb(31, 195, 255), rgb(0, 72, 255));
+}
