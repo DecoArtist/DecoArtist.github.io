@@ -4,10 +4,10 @@ var colette = document.getElementById('colette');
 var edgar = document.getElementById('edgar');
 
 var galeinst = new Audio();
-galeinst.src = "musics/BrainW-inst.ogg";
+galeinst.src = "musics/Broke-inst.ogg";
 
 var galevocals = new Audio();
-galevocals.src = "musics/BrainW-voices.ogg";
+galevocals.src = "musics/Broke-voices.ogg";
 
 var edgarinst = new Audio();
 edgarinst.src = "musics/ShadowP-inst.ogg";
@@ -15,7 +15,7 @@ edgarinst.src = "musics/ShadowP-inst.ogg";
 var edgarvocals = new Audio();
 edgarvocals.src = "musics/ShadowP-voices.ogg";
 
-function galeplay()
+function griffplay()
 {
     edgarinst.pause();
     edgarvocals.pause();
