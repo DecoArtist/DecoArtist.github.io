@@ -3,11 +3,11 @@ var gale = document.getElementById('gale');
 var colette = document.getElementById('colette');
 var edgar = document.getElementById('edgar');
 
-var galeinst = new Audio();
-galeinst.src = "musics/Broke-inst.ogg";
+var griffinst = new Audio();
+griffinst.src = "musics/Broke-inst.ogg";
 
-var galevocals = new Audio();
-galevocals.src = "musics/Broke-voices.ogg";
+var griffvocals = new Audio();
+griffvocals.src = "musics/Broke-voices.ogg";
 
 var edgarinst = new Audio();
 edgarinst.src = "musics/ShadowP-inst.ogg";
@@ -19,16 +19,16 @@ function griffplay()
 {
     edgarinst.pause();
     edgarvocals.pause();
-    galeinst.play();
-    galevocals.play();
+    griffinst.play();
+    griffvocals.play();
 }
 
 function edgarplay()
 {
     edgarinst.play();
     edgarvocals.play();
-    galeinst.pause();
-    galevocals.pause();
+    griffinst.pause();
+    griffvocals.pause();
 }
 
 // var screen = document.getElementById("screen_alert");
