@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <title>Scape From StarrPark - fnf mod web</title>
-    <meta name="description" content="Starrpark Theories website">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <meta property="og:url" content="https://decoartist.github.io/scapefromstarrpark/swiper" />
@@ -14,6 +13,7 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="main.js" defer></script>
     <script src="script.js" defer></script>
 
     <script type="text/javascript">
@@ -71,6 +71,7 @@
         color: #000;
         margin: 0;
         padding: 0;
+        user-select: none;
       }
 
       .swiper {
@@ -103,7 +104,7 @@
         margin-left: 5%;
       }
 
-      .swiper-slide img {
+      .swiper-slide > img {
         display: block;
         width: 100%;
         object-fit: cover;
@@ -111,18 +112,109 @@
         background-color: black;
         box-shadow: 0px 3px 0px 3px rgb(33 33 35 / 50%);
       }
+
+      .playmusic img {
+      cursor: pointer;
+      width: 12%;
+      position: absolute;
+      background-color: white;
+      padding: 5px;
+      box-shadow: 3px 5px 0px 1px rgb(33 33 35 / 50%);
+      border: 7px solid black;
+      border-left-width: 0px;
+      }
+
+      .config
+      {
+        z-index: 99;
+      }
+
+      .iconbgr
+      {
+      z-index: 99;
+      text-transform: uppercase;
+      font-family: "brawl";
+      height: 50px;
+      width: 70px;
+      border-style: solid;
+      border-color: black;
+      border-width: 1%;
+      background-color: #ee6d65;
+      box-shadow: 0px 2px 0px rgb(62 62 62);
+      background-image: linear-gradient(#f38c86 9%, #ffffff00 10%, #ffffff00 90%,#c2554e 12%);
+      color: rgb(255, 255, 255);
+      text-shadow: 1.2px 0px 0px rgb(0 0 0), -1.2px 0px 0px rgb(0 0 0), 0px -1.2px 0px rgb(0 0 0), 0px 1.2px 0px rgb(0 0 0), -1.2px -1.2px 0px rgb(0 0 0), 1.2px -1.2px 0px rgb(0 0 0), -1.2px 1.2px 0px rgb(0 0 0), 1.2px 1.2px 0px rgb(0 0 0), 0px 1.5px 0px rgb(0 0 0), 1.2px 2px 0px rgb(0 0 0), -1.2px 2px 0px rgb(0 0 0);
+      cursor: pointer;
+      margin-bottom: -70px;
+      margin-left: -1px;
+      margin-top: -5px;
+      position: absolute;
+      }
+
+      .icon 
+      {
+      width: 60%;
+      margin-left: 24%;
+      margin-top: -4%;
+      position: absolute;
+      } 
       
     </style>
   </head>
 
   <body>
+
+    <div style="display:none;color:white;background-color:#000;width:100%;height:100%;position:fixed;z-index:9999;" id="screen_alert">
+      <center>rotate your device<br>web need height < width</center>
+    </div>
+
+    <div class="config">
+      <div class="iconbgr">
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72.380997 77.416" id="svg8">
+            <defs id="defs2"></defs>
+            <g inkscape:label="Camada 1" inkscape:groupmode="layer" id="layer1" transform="translate(0,-229.584)">
+              <g id="g844" transform="translate(-51.948827,100.542678)">
+                <path style="fill:none;stroke:#000000;stroke-width:2.59407306;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.76966289;paint-order:fill markers stroke" d="m 58.129755,151.8258 63.997595,1.36892 v 11.80705 l -65.19541,-0.17112 z" id="path832" inkscape:connector-curvature="0"></path>
+                <path style="fill:none;stroke:#000000;stroke-width:2.59407306;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.76966289;paint-order:fill markers stroke" d="m 56.418591,170.4775 63.655349,1.19782 -0.51334,11.12258 -64.339824,0.85558 z" id="path834" inkscape:connector-curvature="0"></path>
+                <path style="fill:none;stroke:#000000;stroke-width:2.59407306;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.76966289;paint-order:fill markers stroke" d="m 54.279635,189.81367 64.831785,-1.43309 -0.44614,14.78018 -64.513983,-1.19782 z" id="path836" inkscape:connector-curvature="0" sodipodi:nodetypes="ccccc"></path>
+                <path inkscape:connector-curvature="0" id="path826" d="m 58.129755,149.24379 63.997595,1.36893 v 11.80704 l -65.19541,-0.17111 z" style="fill:#ffffff;stroke:#000000;stroke-width:4.40494394;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"></path>
+                <path inkscape:connector-curvature="0" id="path828" d="m 56.418591,167.89549 63.655349,1.19782 -0.51334,11.12258 -64.339824,0.85559 z" style="fill:#ffffff;stroke:#000000;stroke-width:4.40494394;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"></path>
+                <path sodipodi:nodetypes="ccccc" inkscape:connector-curvature="0" id="path830" d="m 54.279635,187.23167 64.831785,-1.4331 -0.44614,14.78019 -64.513983,-1.19782 z" style="fill:#ffffff;stroke:#000000;stroke-width:4.40494394;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+
     <!-- Swiper -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide" style="margin-left:0px"><img src="assets/BROKE.png"></div>
-        <div class="swiper-slide"><img src="assets/BRAINWASHED.png"></div>
-        <div class="swiper-slide"><img src="assets/AUTOGRAPH.png"></div>
-        <div class="swiper-slide"><img src="assets/SHADOW-PUNCH.png"></div>
+
+        <div class="swiper-slide" style="margin-left:0px">
+          <img id="griff" src="assets/BROKE.png">
+        </div>
+
+        <div class="swiper-slide">
+          <img id="gale" src="assets/BRAINWASHED.png">
+          <div onclick="galeplay()" class="playmusic">
+            <img src="assets/playmusic.png">
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img id="colette" src="assets/AUTOGRAPH.png">
+        </div>
+
+        <div class="swiper-slide">
+          <img id="edgar" src="assets/SHADOW-PUNCH.png">
+          <div onclick="edgarplay()" class="playmusic">
+            <img src="assets/playmusic.png">
+          </div>
+        </div>
+
         <!-- <div class="swiper-slide">Slide 5</div>
         <div class="swiper-slide">Slide 6</div>
         <div class="swiper-slide">Slide 7</div>
@@ -131,21 +223,5 @@
       </div>
       <!-- <div class="swiper-pagination"></div> -->
     </div>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        centeredSlides: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
   </body>
 </html>
